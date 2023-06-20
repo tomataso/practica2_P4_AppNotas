@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notes.adapters.fragment_note_add"
+    android:padding="@dimen/note_item_padding">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/TextAppearance.Material3.TitleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/tittle_name"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold" />
+
+
+        <TextView
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/note_item_padding_menos"
+            android:text="@string/label_title" />
+
+
+        <EditText
+            android:id="@+id/note_tittle_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="@string/placeholder_title"
+
+            />
+
+        <TextView
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_label" />
+
+        <EditText
+            android:id="@+id/note_tag_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="@string/placeholder_label" />
+
+        <TextView
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_description" />
+
+        <EditText
+            android:id="@+id/note_description_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/placeholder_description"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/addNote"
+            android:textColorHighlight="@color/design_default_color_secondary"
+            android:textColorLink="@color/design_default_color_secondary"
+            android:backgroundTint="@color/light_blue"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@color/light_blue" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="label_title">Tittle</string>
+    <string name="label_label">Tag</string>
+    <string name="label_description">Description</string>
+    <string name="placeholder_title">Enter the tittle</string>
+    <string name="placeholder_label">Enter the tag</string>
+    <string name="placeholder_description">Enter the description</string>
+    <string name="addNote">Add Note</string>
+    <string name="tittle_name">Notes</string>
+</resources>

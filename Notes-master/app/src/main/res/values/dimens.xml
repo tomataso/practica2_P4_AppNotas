@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="note_item_padding">16dp</dimen>
+    <dimen name="note_item_padding">14dp</dimen>
+    <dimen name="note_item_padding_menos">4dp</dimen>
 </resources>

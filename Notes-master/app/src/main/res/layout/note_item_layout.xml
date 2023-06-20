@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="#Cenfotec"/>
+        tools:text="#Cenfotec"
+        android:backgroundTint="@color/dark_blue"
+        />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/note_item_title"
