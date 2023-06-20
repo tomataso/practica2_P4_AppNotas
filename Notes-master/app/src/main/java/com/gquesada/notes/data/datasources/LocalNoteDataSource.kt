@@ -1,5 +1,6 @@
 package com.gquesada.notes.data.datasources
 
+import android.util.Log
 import com.gquesada.notes.data.models.LocalNote
 import com.gquesada.notes.data.models.LocalTag
 
@@ -56,10 +57,38 @@ class LocalNoteDataSource {
 
     fun deleteNote(id: Int) {
         notes.removeIf { note -> note.id == id }
+
+        Log.d("BackendLocalNote", "ID: $id")
     }
 
     fun updateNote(note: LocalNote) {
         val index = notes.indexOfFirst { item -> item.id == note.id }
         notes[index] = note
+    }
+
+    fun lastIDNote(): Int {
+        var highestNoteId = 0
+
+        for (note in notes) {
+            val noteId = note.id
+            if (noteId > highestNoteId) {
+                highestNoteId = noteId
+            }
+        }
+
+        return highestNoteId
+    }
+
+    fun lastIDTag(): Int {
+        var highestTagId = 0
+
+        for (note in notes) {
+            val tagId = note.tag.id
+            if (tagId > highestTagId) {
+                highestTagId = tagId
+            }
+        }
+
+        return highestTagId
     }
 }
